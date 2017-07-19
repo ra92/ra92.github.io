@@ -1,0 +1,15 @@
+<% include ./partials/header %>
+<div class="container centered fullscreen pushed">
+    <h2>Login</h2>
+    <form action="/login" method="POST">
+        <div class="form-group scaling-input">
+        <input type="text" name="username" placeholder="username">
+        </div>
+        <div class="form-group">
+        <input type="password" name="password" placeholder="password">
+        </div>
+        <button class="btn btn-info">Login</button>
+        <a class="btn btn-warning" href="/cars">Cancel</a>
+    </form>
+</div>
+<% include ./partials/footer %>

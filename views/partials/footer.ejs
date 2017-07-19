@@ -1,0 +1,55 @@
+
+		<footer>
+			<div class="row">
+				<div class="col-md-6 col-sm-6 col-xs-6">
+					<img class="img-responsive"src='/img/ra92.png'>
+				</div>
+				<div class="col-md-6 col-sm-6 col-xs-6 centerItems">
+					<div id="socialContent">
+						<a href="https://reddit.com/" class="badge social gplus" target="_blank"><i class="fa fa-reddit-alien"></i></a>
+						<a href="https://github.com/" class="badge social facebook" target="_blank"><i class="fa fa-github"></i></a>
+						<a href="" class="badge social twitter" data-toggle="modal" data-target="#myModal"><i class="fa fa-comment"></i></a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 col-sm-12 col-xs-12 tm-s">
+						<p>Copyright © 2017 Roberto Aguilar • Ontario California based Freelance Web Design & Developer</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!-- MODAL
+		================================================== -->
+		<div class="modal fade tm-l" id="myModal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title inline" id="myModalLabel"><i class="fa fa-envelope fa-lg"></i> Contact me :]</h4>
+						<button type="button" class="close" data-dismiss="modal"><i class="fa fa-close fa-lg" aria-hidden="true"></i><span class="sr-only">Close</span></button>
+					</div><!-- modal-header -->
+					<div class="modal-body centered">
+						<p>Just send me an email and i'll get back to you asap! </p>
+						<form name="contact" class="form-group" action="/contact" method="POST">
+							<div class="form-group inline">
+								<label class="sr-only" for="subscribe-name">Your first name</label>
+								<input type="text" name="name" class="form-control" id="name" placeholder="Your first name" required>
+							</div>
+							<div class="form-group inline">
+								<label class="sr-only" for="subscribe-email">and your email</label>
+								<input type="email" name="email" class="form-control" id="email" placeholder="and your email" required>
+							</div>
+							<div class="form-group">
+								<textarea name="message" id="message" cols="47" rows="5" required></textarea>
+							</div>
+							<div class="form-group inline">
+								<input type="text" name="company" class="form-control" style="display:none;" id="company" placeholder="company">
+							</div>
+							<button class="btn btn-md btn-warning">Submit</button>
+						</form>
+					</div><!-- modal-body -->
+				</div>
+			</div>
+		</div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RA92.Design</title>
+	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+	<link rel="icon" type="img/ico" href="img/favicon.ico">
+	<link rel='stylesheet' type='text/css' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+	<link rel='stylesheet' type='text/css' href='/bootstrap-3.3.7-dist/css/bootstrap.min.css'>
+	<link rel='stylesheet' type='text/css' href='/stylesheets/styles.css'>
+	<link rel='stylesheet' type='text/css' href='/stylesheets/slide.css'>
+	<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light|Comfortaa" rel="stylesheet">
+	<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+	<script type='text/javascript' src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js' ></script>
+	<script type="text/javascript" src='/js/main.js'></script>
+	<script type="text/javascript" src='/js/slide.js'></script>
+
+	<style type="text/css">#sticky{position:fixed;}.content{margin-top: 20px;}</style>
+</head>
+<body>
+	<header>
+		<div class="t1"></div>
+		<% include ./navbar %>
+		<div class="container">
+				<% if(error && error.length > 0){ %>
+						<div class="alert alert-danger centered" role="alert">
+								<%=error%>
+						</div>
+				<% }else if(success && success.length > 0){ %>
+						<div class="alert alert-success centered" role="success">
+								<%=success%>
+						</div>
+				<% } %>
+		</div>
+	</header>
+<!-- END OF GENERIC CODE -->

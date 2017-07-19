@@ -1,0 +1,637 @@
+html {
+    background-color: black;
+}
+
+body {
+    margin: 0;
+    background-color: gray;
+    background-image: url('/img/generic-bg.jpg')
+}
+
+footer {
+    min-height: 15vh;
+    background-color: #333;
+    padding: 50px;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+}
+
+a {
+  color: maroon;
+}
+a:hover {
+  color: orange;
+  text-decoration: none;
+}
+
+strong {
+    color: maroon;
+}
+
+/*----------------------------------------------------------------------*/
+                           /*BANNER SETTINGS*/
+/*----------------------------------------------------------------------*/
+#banner {
+    min-height: 100vh;
+    background-color: #757575;
+    background-image: url('/img/newBanner.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.pushed {
+    padding-top: 10vh;
+}
+
+@media (max-width: 768px) {
+  #banner {
+    background-size: 300vh;
+  }
+  .pushed {
+      padding-top: 13vh;
+  }
+
+
+}
+
+@media (max-height: 500px) {
+    #banner img{
+      height: 100px;
+      width: 100px;
+    }
+}
+
+/*|| Landscape Phone Settings ||*/
+@media (max-height: 400px) {
+  .pushed {
+      padding-top: 16vh;
+  }
+  .navbar {
+    margin-bottom: -10px !important;
+  }
+}
+
+#landingInfo {
+    margin-top: 25vh;
+    width: 100%;
+    position: absolute;
+    text-align:center;
+    color: white;
+}
+
+.landingPic {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 10px 20px 15px rgba(0,0,0,0.28);
+	-moz-box-shadow: 0px 10px 20px 15px rgba(0,0,0,0.28);
+	box-shadow: 0px 10px 20px 15px rgba(0,0,0,0.28);
+}
+
+/*----------------------------------------------------------------------*/
+                           /*NAVAGATION BAR*/
+/*----------------------------------------------------------------------*/
+#sticky{
+    z-index: 1;
+    width: 100%
+}
+
+@media (min-width: 979px) {
+  ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display:inline-block;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    position:relative;
+    max-height: 5vh;
+    padding-top: 2vh;
+    border: 1px solid transparent;
+    font-size: 1.2em;
+  }
+
+  .navbar-brand {
+    float: left;
+    height: 50px;
+    padding: 13px 15px;
+    font-size: 1.2em;
+    line-height: 20px;
+  }
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px){
+  .navbar {
+    position:relative;
+    min-height: 10vh;
+    padding-top: 2vh;
+    border: 1px solid transparent;
+    font-size: 1.2em;
+  }
+
+  .navbar-brand {
+    float: left;
+    height: 50px;
+    padding: 13px 15px;
+    font-size: 1.2em;
+    line-height: 20px;
+  }
+
+  .pushed {
+      padding-top: 10vh;
+  }
+}
+@media only screen
+and (min-device-width : 1024px)
+and (max-device-width : 1366px){
+  .navbar {
+    position:relative;
+    min-height: 10vh;
+    padding-top: 3vh;
+    border: 1px solid transparent;
+    font-size: 1.7em;
+  }
+
+  .navbar-brand {
+    float: left;
+    height: 50px;
+    padding: 10px 15px;
+    font-size: 1.3em;
+    line-height: 20px;
+  }
+
+  .pushed {
+      padding-top: 10vh;
+  }
+}
+
+/*----------------------------------------------------------------------*/
+                           /*Social*/
+/*----------------------------------------------------------------------*/
+
+#socialContent{
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+@media screen and (max-width: 700px) {
+  #socialContent{
+    padding-top: 0px;
+  }
+}
+
+.badge.social {
+	background: #ccc;
+	font-size: 24px;
+	height: 40px;
+	width: 40px;
+	text-align: center;
+	line-height: 42px;
+	margin: 0px 5px 20px 0;
+	padding: 0;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	color: white;
+}
+
+.badge.social.twitter:hover {
+	background: #55acee;
+}
+
+.badge.social.facebook:hover {
+	background: #3b5998;
+}
+
+.badge.social.gplus:hover {
+	background: #db4b39;
+}
+
+/*----------------------------------------------------------------------*/
+                           /*Modal Contact Window*/
+/*----------------------------------------------------------------------*/
+@media (min-width: 600px) {
+  .modal-content{
+      padding-left: 50px;
+      padding-right: 50px;
+      font-size: 1.5em;
+      font-family: 'Shadows Into Light', cursive;
+
+  }
+
+}
+@media (max-width: 600px) {
+  .modal-content{
+      padding-left: 50px;
+      padding-right: 50px;
+      font-size: 1.2em;
+      font-family: 'Shadows Into Light', cursive;
+
+  }
+
+}
+@media (max-width: 500px) {
+  .modal-content{
+      padding-left: 5px;
+      padding-right: 5px;
+      font-size: 1em;
+      font-family: 'Shadows Into Light', cursive;
+
+  }
+
+}
+
+/*----------------------------------------------------------------------*/
+                        /*IMPORTANT CLASSES*/
+/*----------------------------------------------------------------------*/
+
+.fixed {
+    position:fixed;
+}
+
+.inline {
+    display:inline-block;
+}
+
+.centered {
+    text-align: center;
+}
+
+.centerItems {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.vw30 {
+    width: 30vw;
+}
+.vh30 {
+    width: 30vw;
+}
+
+.tm-s {
+    margin-top: 5vh;
+}
+.tm-l {
+    margin-top: 20vh;
+}
+.bm-xs{
+  margin-bottom: 5vh;
+}
+.bm-xxs{
+  margin-bottom: 2.5vh;
+}
+.bm-s {
+    margin-bottom: 10vh;
+}
+.bm-l {
+    margin-bottom: 20vh;
+}
+
+.lm-s{
+    margin-left: 5vw;
+}
+.lm-l{
+    margin-left: 10vw;
+}
+.rm-s{
+    margin-right: 5vw;
+}
+.rm-l{
+    margin-right: 10vw;
+}
+.fullscreen {
+  height: 75vh;
+}
+.shadow {
+    -webkit-box-shadow: 0px 10px 20px 5px rgba(0,0,0,0.28);
+	  -moz-box-shadow: 0px 10px 20px 5px rgba(0,0,0,0.28);
+	  box-shadow: 0px 10px 20px 5px rgba(0,0,0,0.28);
+ }
+
+/*----------------------------------------------------------------------*/
+                              /*WHAT I DO*/
+/*----------------------------------------------------------------------*/
+
+.whatIDo{
+  margin-left: auto;
+  margin-right: auto;
+  height: 200px;
+  background-color: black;
+  color: white;
+  width: auto;
+  padding-top: 75px;
+  -webkit-box-shadow: 0px 10px 20px 5px rgba(0,0,0,0.28);
+  -moz-box-shadow: 0px 10px 20px 55px rgba(0,0,0,0.28);
+  box-shadow: 0px 10px 20px 5px rgba(0,0,0,0.28);
+  font-family: 'Comfortaa', cursive;
+  font-size: 2em;
+}
+.whatIDo strong{
+  color: orange;
+}
+
+.miniSection{
+  height: 200px;
+  background-color: white;
+}
+
+@media (max-height: 500px) {
+  .miniSection{
+    margin-top: 10vh;
+  }
+}
+
+/*----------------------------------------------------------------------*/
+                              /*Portfolio Section*/
+/*----------------------------------------------------------------------*/
+
+#aboutMe{
+  background-image: url('/img/generic-bg.jpg');
+  background-size: cover;
+}
+#portfolioSection{
+  background-image: url('/img/hustleCustom.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #333;
+}
+#whatIDoSection{
+  background-image: url('/img/dark-bg.jpg');
+  background-color: white;
+}
+#toolsSection{
+    background-color: white;
+}
+
+@media (max-width: 768px) {
+  #toolsSection .centerItems{
+    margin-top: 5vh;
+  }
+}
+
+#portfolioHeader {
+  background-image: url('/img/together.jpg');
+  background-size: cover;
+  color: white;
+}
+#aboutHeader {
+  background-image: url('/img/hustleHalfOpt.jpg');
+  color: white;
+}
+#blogHeader {
+  background-image: url('/img/nicedesk.jpg');
+  color: white;
+}
+
+.blogImg {
+  max-height: 100px;
+  max-width: 200px;
+}
+
+.blogDate {
+  position: absolute;
+  right: 0px;
+}
+
+.blogPost {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  border-bottom: 2px solid orange;
+  width: auto;
+  padding: 5vw;
+  -webkit-box-shadow: 0px 10px 20px 5px rgba(0,0,0,0.28);
+  -moz-box-shadow: 0px 10px 20px 55px rgba(0,0,0,0.28);
+  box-shadow: 0px 10px 20px 5px rgba(0,0,0,0.28);
+  font-family: 'Comfortaa', cursive;
+}
+
+#resourcesHeader {
+  background-image: url('/img/hustleHalfOpt.jpg');
+  background-size: cover;
+  color: white;
+}
+
+.resource-img {
+  height: 200px;
+  width: 200px;
+}
+
+.headerSection {
+  background: bottom bottom no-repeat fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 15vh;
+  min-height: 40vh;
+  color: white;
+}
+
+.headerSection h1 {
+  font-weight: bold;
+  font-size: 3em;
+}
+
+@media (max-width: 979px) {
+  .headerSection {
+    padding-top: 10vh;
+    min-height: 35vh;
+  }
+}
+
+
+@media (min-width: 768px){
+.ghost {
+  position: absolute;
+  margin-bottom: 50vh;
+  right: 0;
+  left: 0;
+}
+.ghost-buster {
+  margin-top: 5vh;
+}
+}
+@media (min-width: 768px) and (min-height: 700px) {
+  .ghost-buster {
+    margin-top: 5vh;
+  }
+}
+@media (min-width: 992px) and (min-height: 700px) {
+  .ghost-buster {
+    margin-top: 12vh;
+  }
+}
+@media (min-width: 1200px) and (min-height: 700px) {
+  .ghost-buster {
+    margin-top: 17vh;
+  }
+}
+@media (min-width: 1200px) and (min-height: 1000px) {
+  .ghost-buster {
+    margin-top: 8vh;
+    border: 2px solid red;
+  }
+}
+@media only screen
+and (min-device-width : 1024px)
+and (max-device-width : 1366px)
+and (orientation : landscape){
+  .ghost-buster {
+    margin-top: 10vh;
+  }
+}
+@media only screen
+and (min-device-width : 1024px)
+and (max-device-width : 1366px)
+and (orientation : portrait){
+  .ghost-buster {
+    margin-top: 3vh;
+  }
+}
+
+
+
+/*----------------------------------------------------------------------*/
+                              /*General |||| EVENTUALLY MERGE THIS SHIT */
+/*----------------------------------------------------------------------*/
+
+.rocket-cog {
+  margin-top: -25px;
+}
+
+.contact-btn:focus {
+  outline: none;
+}
+
+.tag{
+  background-color: orange;
+}
+.tag-inverted{
+  background-color: black;
+}
+
+.font-2 {
+  font-size: 2em;
+  font-family: 'Shadows Into Light', cursive;
+}
+
+.pannel-1 {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    width: auto;
+    padding: 5vw;
+    -webkit-box-shadow: 0px 10px 20px 5px rgba(0,0,0,0.28);
+	  -moz-box-shadow: 0px 10px 20px 55px rgba(0,0,0,0.28);
+	  box-shadow: 0px 10px 20px 5px rgba(0,0,0,0.28);
+    font-family: 'Comfortaa', cursive;
+    font-size: 2em;
+}
+
+.pannel-2 {
+    width: 75vw;
+    padding: 10vw;
+    -webkit-box-shadow: 0px 10px 20px 5px rgba(0,0,0,0.28);
+	  -moz-box-shadow: 0px 10px 20px 55px rgba(0,0,0,0.28);
+	  box-shadow: 0px 10px 20px 5px rgba(0,0,0,0.28);
+	  font-family: 'Shadows Into Light', cursive;
+    font-size: 2em;
+}
+
+.myH1 {
+    font-size: 3em;
+    text-align: center;
+    font-weight: bold;
+}
+.myH2 {
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: bold;
+}
+
+.noflow{
+  overflow: hidden;
+}
+
+.highlight:hover{
+  -webkit-box-shadow: 0px 0px 40px 5px rgba(255,111,0,1);
+  -moz-box-shadow: 0px 0px 40px 5px rgba(255,111,0,1);
+  box-shadow: 0px 0px 40px 5px rgba(255,111,0,1);
+}
+
+
+.red {
+    color: red;
+}
+.rev {
+    border: 2px solid red;
+}
+
+.maroon {
+    color: white;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.black {
+    color: black;
+}
+
+.white {
+    color: white;
+}
+.white-bg{
+  background-color: white;
+}
+
+.orange {
+    color:orange;
+}
+/* === RESOURCES === */
+
+.resource {
+  background-color: white;
+	width: 31.33333333%;
+	float: left;
+  padding: 5vh 2vw;
+	margin: 0 3% 40px 0;
+  -webkit-box-shadow: 0px 10px 20px 5px rgba(0,0,0,0.28);
+  -moz-box-shadow: 0px 10px 20px 5px rgba(0,0,0,0.28);
+  box-shadow: 0px 10px 20px 5px rgba(0,0,0,0.28);
+}
+
+.resource img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
+.resource:nth-child(3n) {
+	margin-right: 0;
+}
+
+@media screen and (max-width : 768px) {
+	.resource {
+		width: 48%;
+		margin-right: 2%;
+	}
+}
+
+@media screen and (max-width : 568px) {
+	.resource {
+		width: 100%;
+		margin-right: 0;
+	}
+}

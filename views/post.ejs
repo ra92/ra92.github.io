@@ -1,0 +1,28 @@
+<%include ./partials/header%>
+<div id="blogHeader" class="headerSection content bm-s font-2 inView" data-type="background" data-speed="5">
+	<h1>My Blog</h1>
+</div>
+<div class="container">
+
+    <div class="row blogPost bm-s">
+      <div class="col-sm-4">
+        <img class="img-responsive" src="<%=blog.image%>">
+      </div>
+      <div class="col-sm-8">
+        <div class="tm-s bm-s shadow tag centered">
+          <div class="myH1 maroon inline"><%=blog.title%></div>
+        </div>
+        <p><%-blog.body%></p>
+        <hr>
+				<% if(currentUser){ %>
+        <a href="/blog/<%=blog._id%>/edit" class="btn btn-warning btn-lg">Edit</a>
+        <form class="inline" action="/blog/<%=blog._id%>?_method=DELETE" method="POST">
+            <button class="btn btn-lg btn-danger">Delete</button>
+        </form>
+				<% } %>
+        <div class="blogDate"><%=blog.created.toDateString()%></div>
+      </div>
+    </div>
+
+</div>
+<%include ./partials/footer%>

@@ -1,0 +1,24 @@
+<% include ./partials/header %>
+<div id="blogHeader" class="headerSection content bm-s font-2 inView" data-type="background" data-speed="5">
+	<h1>My Blog</h1>
+</div>
+	<div class="container bm-s">
+		<% blogs.forEach(function(blog){%>
+			<div class="row bm-s">
+				<div class="blogPost centerItems animation-element appear">
+					<div class="col-sm-4" style="border-right:1px solid black;">
+						<h3><a href="/blog/<%=blog._id%>"><%=blog.title%></a></h3>
+							<a href="/blog/<%=blog._id%>"><img class="blogImg" src="<%=blog.image%>"></a>
+					</div>
+					<div class="col-sm-8">
+						<%if(!! blog.body){%>
+						<a href="/blog/<%=blog._id%>"><p><%-blog.body.substring(0,100)%>...</p></a>
+						<% };%>
+						<div class="blogDate"><%=blog.created.toDateString()%></div>
+					</div>
+				</div>
+			</div>
+		<% }); %>
+	</div>
+</div>
+<% include ./partials/footer %>
